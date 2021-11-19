@@ -394,5 +394,7 @@ falcosidekick:
     webhook:
       address: http://webhook-falco-eventsource-svc.argo-events.svc.cluster.local:12000/falco
       customHeaders: Source:falco
+    service:
+      type: NodePort
   fullfqdn: false
   # for configuration values, see https://github.com/falcosecurity/charts/blob/master/falcosidekick/values.yaml
