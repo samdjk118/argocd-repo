@@ -310,7 +310,7 @@ falco:
   # You can configure the address to bind and expose it.
   # By modifying the threadiness configuration you can fine-tune the number of threads (and context) it will use.
   grpc:
-    enabled: enable
+    enabled: false
     threadiness: 0
 
     # gRPC unix socket with no authentication
@@ -327,7 +327,7 @@ falco:
   # By enabling this all the output events will be kept in memory until you read them with a gRPC client.
   # Make sure to have a consumer for them or leave this disabled.
   grpcOutput:
-    enabled: enable
+    enabled: false
 
   # Container orchestrator metadata fetching params
   metadataDownload:
@@ -353,10 +353,10 @@ customRules:
 certs:
   existingSecret: ""
   server:
-    key: "/data/certs/server.key"
-    crt: "/data/certs/server.crt"
+    key: ""
+    crt: ""
   ca:
-    crt: "/data/certs/ca.crt"
+    crt: ""
 
 # Allow Falco to run on Kubernetes 1.6 masters.
 tolerations:
