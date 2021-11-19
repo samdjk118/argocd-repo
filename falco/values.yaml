@@ -1,11 +1,11 @@
 falcosidekick:
+  enabled: true
+  webui:
     enabled: true
-    webui:
-        enabled: true
-    config:
-        webhook:
-            address: http://webhook-falco-eventsource-svc.argo-events.svc.cluster.local:12000/falco
-            customHeaders: Source:falco
+  config:
+    webhook:
+    address: http://webhook-falco-eventsource-svc.argo-events.svc.cluster.local:12000/falco
+    customHeaders: Source:falco
 falco:
   rulesFile:
     - /etc/falco/falco_rules.yaml
