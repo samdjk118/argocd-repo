@@ -7,6 +7,9 @@ spec:
   revisionHistoryLimit: 3
   selector:
     matchLabels:
+      app: javademo
+  template:
+    metadata:
       labels:
         app: javademo
     spec:
