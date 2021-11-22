@@ -14,7 +14,7 @@ spec:
         app: javademo
     spec:
       containers:
-      - image: 20.98.70.140/projecta/spring-demo:1.0
+      - image: 20.98.70.140/alpha/spring-demo:lts
         name: javademo
         ports:
         - containerPort: 8080
